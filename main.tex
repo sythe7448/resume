@@ -1,228 +1,254 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+\documentclass[letterpaper,10pt]{article}[leftmargin=*]
 
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexsym}
 \usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+  \usepackage[xetex]{hyperref}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[pdftex]{hyperref}
+\fi
+\usepackage{fontawesome}
+\usepackage[sfdefault,light]{FiraSans}
+\usepackage{anyfontsize}
+\usepackage{xcolor}
 \usepackage{tabularx}
-% only for pdflatex
-% \input{glyphtounicode}
 
-% fontawesome
-\usepackage{fontawesome5}
+%-------------------------------------------------- SETTINGS HERE --------------------------------------------------
+% Header settings
+\def \fullname {Jake Colburn}
+\def \subtitle {}
 
-% fixed width
-\usepackage[scale=0.90,lf]{FiraMono}
+\def \linkedinicon {\faLinkedin}
+\def \linkedinlink {https://www.linkedin.com/in/jake-colburn-71401811/}
+\def \linkedintext {/jake-colburn}
 
-% light-grey
-\definecolor{light-grey}{gray}{0.83}
-\definecolor{dark-grey}{gray}{0.3}
-\definecolor{text-grey}{gray}{.08}
+\def \phoneicon {\faPhone}
+\def \phonetext {954-347-0199}
 
-\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
-\DeclareTextFontCommand{\texteb}{\ebseries}
+\def \emailicon {\faEnvelope}
+\def \emaillink {mailto:jakecolburn.sythe@gmail.com}
+\def \emailtext {jakecolburn.sythe@gmail.com}
 
-% custom underilne
-\usepackage{contour}
-\usepackage[normalem]{ulem}
-\renewcommand{\ULdepth}{1.8pt}
-\contourlength{0.8pt}
-\newcommand{\myuline}[1]{%
-  \uline{\phantom{#1}}%
-  \llap{\contour{white}{#1}}%
-}
+% \def \websiteicon {\faGlobe}
+% \def \websitelink {https:www.jakecolburn.com}
+% \def \websitetext {jakecolburn.com}
 
+\def \headertype {\singlecol} % \singlecol or \doublecol
 
-% custom font: helvetica-style
-\usepackage{tgheros}
-\renewcommand*\familydefault{\sfdefault} 
-%% Only if the base font of the document is to be sans serif
-\usepackage[T1]{fontenc}
+% Misc settings
+\def \entryspacing {-0pt}
 
+\def \bulletstyle {\faAngleRight}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+% Define colours
+\definecolor{primary}{HTML}{000000}
+\definecolor{secondary}{HTML}{2f4928}
+\definecolor{accent}{HTML}{263238}
+\definecolor{links}{HTML}{4f7942}
+
+%------------------------------------------------------------------------------------------------------------------- 
+
+% Defines to make listing easier
+\def \linkedin {\linkedinicon \hspace{3pt}\href{\linkedinlink}{\linkedintext}}
+\def \phone {\phoneicon \hspace{3pt}{ \phonetext}}
+\def \email {\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
+\def \website {\websiteicon \hspace{3pt}\href{\websitelink}{\websitetext}}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{0in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.1in}
 
-\urlstyle{same}
+% Define the link colours
+\hypersetup{
+    colorlinks=true,
+    urlcolor=links,
+}
 
+% Set the margin alignment 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting - serif
-% \titleformat{\section}{
-%   \vspace{2pt} \scshape \raggedright\large % header section
-% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
-
-% TODO EBSERIES
-% sans serif sections
-\titleformat {\section}{
-    \bfseries \vspace{2pt} \raggedright \large % header section
-}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
-
-% only for pdflatex
-% Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
-
 %-------------------------
 % Custom commands
+
+% Sections
+\renewcommand{\section}[2]{\vspace{5pt}
+  \colorbox{secondary}{\color{white}\raggedbottom\normalsize\textbf{{#1}{\hspace{7pt}#2}}}
+}
+
+% Entry start and end, for spacing
+\newcommand{\resumeEntryStart}{\begin{itemize}[leftmargin=2.5mm]}
+\newcommand{\resumeEntryEnd}{\end{itemize}\vspace{\entryspacing}}
+
+% Itemized list for the bullet points under an entry, if necessary
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=4.5mm]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% Resume item
+\renewcommand{\labelitemii}{\bulletstyle}
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
-      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
-    \end{tabular*}\vspace{-4pt}
+% Entry with title, subheading, date(s), and location
+\newcommand{\resumeEntryTSDL}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+      \textit{\color{accent}\small#3} & \textit{\color{accent}\small#4} \\
+    \end{tabularx}\vspace{-6pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+% Entry with title and date(s)
+\newcommand{\resumeEntryTD}[2]{
+  \vspace{-1pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+    \end{tabularx}\vspace{-6pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & {\color{dark-grey}} \\
-    \end{tabular*}\vspace{-4pt}
+% Entry for special (skills)
+\newcommand{\resumeEntryS}[2]{
+  \item[]\small{
+    \textbf{\color{primary}#1 }{ #2 \vspace{-6pt}}
+  }
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+% Double column header
+\newcommand{\doublecol}[6]{
+  \begin{tabularx}{\textwidth}{Xr}
+    {
+      \begin{tabular}[c]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}} % You could add a subtitle here
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l@{\hspace{1.5em}}l}
+        {\small#4} & {\small#1} \\
+        {\small#5} & {\small#2} \\
+        {\small#6} & {\small#3}
+      \end{tabular}
+    }
+  \end{tabularx}
+}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-% CHANGED default leftmargin  0.15 in
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
-
-\color{text-grey}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Single column header
+\newcommand{\singlecol}[6]{
+  \begin{tabularx}{\textwidth}{Xr}
+    {
+      \begin{tabular}[b]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}} % You could add a subtitle here
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l}
+        {\small#1} \\
+        {\small#2} \\
+        {\small#3} \\
+        {\small#4} \\
+        {\small#5} \\
+        {\small#6}
+      \end{tabular}
+    }
+  \end{tabularx}
+}
 
 \begin{document}
+%-------------------------------------------------- BEGIN HERE --------------------------------------------------
 
-%----------HEADING----------
-\begin{center}
-    \textbf{\Huge Jake Colburn} \\ \vspace{5pt}
-    \small \faPhone* \texttt{954-347-0199} \hspace{1pt} $|$
-    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{jakecolburn.sythe@gmail.com} \hspace{1pt} $|$ 
-    \hspace{1pt} \faGlobe \hspace{2pt} \texttt{jakecolburn.com} \hspace{1pt} $|$
-    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Austin, TX}
-    \\ \vspace{-3pt}
-\end{center}
+%---------------------------------------------------- HEADER ----------------------------------------------------
 
-%-----------EXPERIENCE-----------
-\section{EXPERIENCE}
-  \resumeSubHeadingListStart
+\headertype{\linkedin}{\email}{\website}{\phone}{}{} % Set the order of items here
+\vspace{-10pt} % Set a negative value to push the body up, and the opposite
 
-    \resumeSubheading
-      {Olympusat}{Nov. 2019 -- Present}
-      {Backend Developer}{West Palm Beach, FL}
-      \resumeItemListStart
-        \resumeItem{\textbf{Refactored Content Ingestion System}; added a queue system for content to be ingested without data being lost and increasing preformance of the website}
-        \resumeItem{\textbf{Designed and created Elementor modules} for website managers to use and improve website without technical knowledge}
-        \resumeItem{\textbf{Interfaced with 3rd party companies} to coordinate and explain technical details to product owners}
-        \resumeItem{\textbf{Worked on REST APIs} for content distrubtion to mobile applications}
-        \resumeItem{Rebuilt interal company wiki/document website}
-        \resumeItem{Solved bugs across multiplatform systems and APIs}
-      \resumeItemListEnd
+%-------------------------------------------------- EXPERIENCE --------------------------------------------------
+\section{\faPieChart}{Experience}
 
-    \resumeSubheading
-      {Studio Twenty Seven}{Mar. 2019 -- feb. 2021}
-      {Web Content Manager}{San Francisco, CA}
-      \resumeItemListStart
-        \resumeItem{\textbf{Redesigned Front-End webpages} to the design the owner requested }
-        \resumeItem{Rebuilt all high quality images to web with minimal quality loss, \textbf{decreasing load time of website by 45\%}}
-        \resumeItem{Added SEO to files and webpages to be indexed better}
-
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {\href{https://www.linkedin.com/company/olympusat/}{Olympusat}}{Nov. 2019 -- Present}
+      {Jr. Backend Developer}{West Palm Beach, FL}
+    \resumeItemListStart
+      \resumeItem {Refactored CRUD Content Ingestion System. Added queue system supporting multiple languages, improving the performance of \textit{FreeTV}, Olympusat’s flagship streaming platform.}
+      \resumeItem {Designed Elementor widgets to enable non-technical staff to create front-end features.}
+      \resumeItem {Maintained Oly RESTful API (LAMP) that delivers 40,000+ hours of Spanish/English content to 1 million viewers on Samsung, Roku, iOS, Android, and Vizio devices.}
+        \resumeItem{Created a microservice for exporting FreeTV data to S3 buckets for ingestion by Domo.}
+        \resumeItem{Developed querying interface for non-technical staff to securely pull data from production RDS DBs.}
+        \resumeItem{Rebuilt Olympusat.com to utilize WordPress best practices and integrate with Elementor}
+        \resumeItem{Contributed to team documentation goals by standing up internal team wiki.}
     \resumeItemListEnd
+  \resumeEntryEnd
 
-  \resumeSubHeadingListEnd
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {\href{https://studiotwentyseven.com/}{STUDIOTWENTYSEVEN}}{Mar. 2019 - Feb. 2021}
+      {Web Content Manager}{Miami, FL}
+    \resumeItemListStart
+      \resumeItem {Designed WordPress theme and managed webpage SEO for higher visibility in search indexing}
+      \resumeItem {Compressed all site images with minimal quality loss, decreasing webpage load time by 45\%}
+    \resumeItemListEnd
+  \resumeEntryEnd
 
-
-%-----------PROJECTS-----------
-
-% \section{PROJECTS}
-%     \resumeSubHeadingListStart
-%       \resumeProjectHeading
-%           {\textbf{Hyku Consulting}} {Sept. 2019 -- Mar. 2021}
-%           \resumeItemListStart
-%             \resumeItem{Mentored 15 students towards acceptance at top US boarding schools; achieved \textbf{100\% success rate}}
-%             \resumeItem{Designed a collaborative learning ecosystem for students and parents with Trello, Miro, and Google Suite}
-%             \resumeItem{Expanded customer outreach through {\href{https://www.quora.com/profile/Harshibar}{{\myuline{Quora}}}} (1M+ views); reached \textbf{\$25k total revenue} in 2 years}
-%           \resumeItemListEnd
-          
-%         \resumeProjectHeading
-%           {\textbf{Minimal Icon Pack}}{Sept. 2020 -- Nov. 2020}
-%           \resumeItemListStart
-%             \resumeItem{Designed and released 100+ minimal iOS and Android icons from scratch using Procreate and Figma}
-%             \resumeItem{Marketed the product and design process on {\href{https://www.youtube.com/watch?v=Ju32r7QJCzk}{\myuline {YouTube}}}; accumulated over \textbf{\$250 in sales} on {\href{https://gumroad.com/l/icons-by-harshibar}{\myuline {Gumroad}}}}
-%           \resumeItemListEnd
-          
-%       \resumeProjectHeading
-%          {\textbf{CommonIntern}}{Sept. 2019 -- May 2020}
-%           \resumeItemListStart
-%             \resumeItem{Built a Python script to automatically apply to jobs on Glassdoor using BeautifulSoup and Selenium}
-%             \resumeItem{\textbf{500 stars on \href{https://github.com/harshibar/common-intern}{\myuline {GitHub}}}; featured on {\href{https://hackaday.com/2020/05/30/job-application-script-automates-the-boring-stuff-with-python}{\myuline {Hackaday}}}; made the front page of {\href {https://www.reddit.com/r/Python/comments/gpaegj/i_was_tired_of_opening_100s_of_tabs_for/?utm_source=share}{\myuline {r/python}}} and {\href {https://www.reddit.com/r/programming/comments/dcmbzx/i_was_tired_of_opening_100s_of_tabs_for/}{\myuline {r/programming}}}}
-%           \resumeItemListEnd
-          
-%     \resumeSubHeadingListEnd
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {\href{https://www.fastsigns.com/hollywood-fl/}{FastSigns}}{Mar. 2016 - Nov. 2019}
+      {Graphic Design \& Production Artist}{Hollywood, FL}
+    \resumeItemListStart
+      \resumeItem {Setup hardware for store-wide NAS system and configured offsite backups}
+      \resumeItem {Produced responsive digital signage webpages for Chromecast kiosks.}
+    \resumeItemListEnd
+  \resumeEntryEnd
 
 
+%-------------------------------------------------- PROJECTS --------------------------------------------------
+\section{\faFlask}{Side Projects}
 
-%-----------EDUCATION-----------
-\section {EDUCATION}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Ex'pression College of Digital Arts}{Jan. 2009 -- Aug. 2011}
-      {Bachelor of Applied Science}{Emeryville, CA}
-  \resumeSubHeadingListEnd
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Product Owner of \href{https://github.com/bravecollective}{Brave Software} }{2012 - 2013}
+      {Brave Newbies, Inc.}{Eve Online/Multi-Platform}
+    \resumeItemListStart
+      \resumeItem {Created and led software team to support org. of 20,000 players by creating, maintaining, and testing internal services (2FA Portals, Wiki, VoIP, Forums, Notification Systems, etc.)}
+      \resumeItem {Prioritized organizational needs and devised technical solutions for continued operational security within the volatile, Player vs. Player environment of Eve Online}
+      \resumeItem {Delegated tasks for 8-10 volunteer Engineers through Trello}
+    \resumeItemListEnd
+  \resumeEntryEnd
 
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Intelligence Coordinator}{2016 - 2021}
+      {GoonSwarm Federation}{Eve Online/Multi-Platform}
+    \resumeItemListStart
+      \resumeItem {Wrote and maintained InfoSec best practices to protect a 35,000+ player organization. }
+      \resumeItem {Managed, trained, and assessed 10-15 volunteers on penetration testing practices and tools. Advised on the targeted, individual, and creative penetration of our competitor's systems. }
+      \resumeItem{Documented and presented results of external investigations. Led internal investigations on risks and liabilities. }
+    \resumeItemListEnd
+  \resumeEntryEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{SKILLS}
- \begin{itemize}[leftmargin=0in, label={}]
-    \small{\item{
-     \textbf{Languages} {: PHP, Python, JavaScript, HTML/CSS, SQL (MySQL), Bash}\vspace{2pt} \\
-     \textbf{Tools}     {: IntelliJ IDEs, Notion, Jira, Trello, Miro, Google Analytics, GitHub, OBS}
-    }}
- \end{itemize}
+%-------------------------------------------------- EDUCATION --------------------------------------------------
+\section{\faGraduationCap}{Education}
 
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Ex’pression College of Digital Arts}{Jan. 2009 - Sep. 2011}
+      {BaSc in Game Art and Design}{Emeryville, CA}
+  \resumeEntryEnd
 
-%-------------------------------------------
+%-------------------------------------------------- PROGRAMMING SKILLS --------------------------------------------------
+\section{\faGears}{Skills}
+ \resumeEntryStart
+  \resumeEntryS{Languages \& Platforms} { PHP, Python, JavaScript, HTML/CSS, SQL, Bash, TypeScript, AWS, WordPress, Laravel Framework}
+  \resumeEntryS{Tools } {JetBrains IDEs, Jira, Git/GitHub/BitBucket, Postman/Curl, Linux, MySQL, Trello, Adobe Creative Suite}
+ \resumeEntryEnd
+
 \end{document}
