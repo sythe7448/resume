@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  9 MAR 2023 09:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  30 MAR 2023 17:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -257,6 +257,7 @@ LaTeX Font Info:    ... okay on input line 166.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
 LaTeX Font Info:    ... okay on input line 166.
 Package hyperref Info: Link coloring ON on input line 166.
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
@@ -276,114 +277,12 @@ Package hyperref Info: Link coloring ON on input line 166.
 \makeMPintoPDFobject=\count282
 \everyMPtoPDFconversion=\toks26
 ) (c:/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd)
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-\website ->\websiteicon 
-                        \hspace {3pt}\href {\websitelink }{\websitetext }
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-<argument> \websitelink 
-                        
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-<argument> \websitetext 
-                        
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-\website ->\websiteicon 
-                        \hspace {3pt}\href {\websitelink }{\websitetext }
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-<argument> \websitelink 
-                        
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-<argument> \websitetext 
-                        
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-\website ->\websiteicon 
-                        \hspace {3pt}\href {\websitelink }{\websitetext }
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-<argument> \websitelink 
-                        
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 171.
-
-c:/Users/sythe/Desktop/resume/main.tex:171: Undefined control sequence.
-<argument> \websitetext 
-                        
-l.171 ...{\linkedin}{\email}{\website}{\phone}{}{}
-                                                   % Set the order of items ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <10> not available
 (Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 175.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
 (Font)              scaled to size 10.0pt on input line 175.
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 175.
-(c:/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+ (c:/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
 
@@ -408,25 +307,19 @@ LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11369 strings out of 474971
- 181153 string characters out of 5780120
- 540386 words of memory out of 5000000
+ 11373 strings out of 474971
+ 181189 string characters out of 5780120
+ 540500 words of memory out of 5000000
  32742 multiletter control sequences out of 15000+600000
  617841 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,15n,77p,295b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fira/FiraSans-Light.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fira/FiraSans-LightItalic.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on main.pdf (1 page, 208872 bytes).
+Output written on main.pdf (1 page, 208818 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream

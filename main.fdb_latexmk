@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1678375931 "c:/Users/sythe/Desktop/resume/main.tex" "main.pdf" "main" 1678375931
-  "c:/Users/sythe/Desktop/resume/main.tex" 1678375928 9722 e50e4c229bded2e74e624762a3c3e843 ""
+["pdflatex"] 1680217133 "c:/Users/sythe/Desktop/resume/main.tex" "main.pdf" "main" 1680217135
+  "c:/Users/sythe/Desktop/resume/main.tex" 1680217131 9714 8902fa8d10322245f0929619336f8561 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc" 1668275746 3071 cfa92ee28d698dd9275559d9d1c3a233 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1668275795 1687 f004baecce60175c6453d0e3f808cf20 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1668275795 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -90,9 +90,9 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1668279017 4645761 4123604570e0c45243886bbbed7ce94b ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1668279081 3063421 45c782600078b08b75ad595d15bf0aff ""
   "c:/texlive/2022/texmf.cnf" 1668278998 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1678375931 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.aux" 1680217134 554 e6f85c6f44bbe194532b4fa1fd8ca02c "pdflatex"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1678375928 9722 e50e4c229bded2e74e624762a3c3e843 ""
+  "main.tex" 1680217131 9714 8902fa8d10322245f0929619336f8561 ""
   (generated)
   "main.aux"
   "main.log"

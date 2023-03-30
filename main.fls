@@ -557,6 +557,16 @@ INPUT main.aux
 INPUT main.aux
 OUTPUT main.aux
 INPUT c:/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
+INPUT ./main.out
+INPUT main.out
+INPUT ./main.out
+INPUT main.out
+INPUT ./main.out
+INPUT main.out
+INPUT ./main.out
+INPUT main.out
+INPUT ./main.out
+INPUT ./main.out
 OUTPUT main.out
 OUTPUT main.pdf
 INPUT c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
