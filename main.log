@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  30 MAR 2023 17:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  4 APR 2023 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -319,7 +319,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  72i,15n,77p,295b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fira/FiraSans-Light.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fira/FiraSans-LightItalic.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on main.pdf (1 page, 208818 bytes).
+Output written on main.pdf (1 page, 208826 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
