@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1692908906 "c:/Users/jakec/OneDrive/Documents/resume/main.tex" "main.pdf" "main" 1692908907 0
-  "c:/Users/jakec/OneDrive/Documents/resume/main.tex" 1692908905 9735 5eccfb524df24e523278b155dff39185 ""
+["pdflatex"] 1692910876 "c:/Users/jakec/OneDrive/Documents/resume/main.tex" "main.pdf" "main" 1692910877 0
+  "c:/Users/jakec/OneDrive/Documents/resume/main.tex" 1692910875 9281 51d118db99dd4571e97689fff75c80d9 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fira/fir_iln36p.enc" 1692380939 3071 cfa92ee28d698dd9275559d9d1c3a233 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1692380996 1687 f004baecce60175c6453d0e3f808cf20 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1692380996 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -90,9 +90,9 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1692384326 4702518 9e2031bde068df569c200d4a9a9de868 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1692384425 8172983 02185b80566ce0debe66129754aeab3e ""
   "c:/texlive/2023/texmf.cnf" 1692384308 713 e69b156964470283e0530f5060668171 ""
-  "main.aux" 1692908906 554 e6f85c6f44bbe194532b4fa1fd8ca02c "pdflatex"
-  "main.out" 1692908906 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1692908905 9735 5eccfb524df24e523278b155dff39185 ""
+  "main.aux" 1692910877 554 e6f85c6f44bbe194532b4fa1fd8ca02c "pdflatex"
+  "main.out" 1692910876 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1692910875 9281 51d118db99dd4571e97689fff75c80d9 ""
   (generated)
   "main.aux"
   "main.log"
