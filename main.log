@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.18)  24 AUG 2023 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.18)  17 NOV 2023 11:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -320,16 +320,16 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  11585 strings out of 475188
  180653 string characters out of 5767814
- 1946248 words of memory out of 5000000
+ 1947248 words of memory out of 5000000
  32740 multiletter control sequences out of 15000+600000
  706651 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,306b,457s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fira/FiraSans-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fira/FiraSans-Light.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fira/FiraSans-LightItalic.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on main.pdf (1 page, 206056 bytes).
+Output written on main.pdf (1 page, 206775 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
